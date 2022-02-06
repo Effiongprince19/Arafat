@@ -1,0 +1,211 @@
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.678), rgba(10, 10, 10, 0.63), rgba(39, 38, 38, 0.685)),url(../img/download\ \(1\).jfif);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+span{
+    color: coral;
+    font-size: 30px;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    background: rgba(85, 15, 15, 0.726);
+    color: white;
+    align-items: center;
+}
+.logo {
+    color: coral;
+    font-size: 24px;
+    font-weight: bolder;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    list-style: none;
+}
+
+ul {
+    list-style: none;
+}
+.main-nav {
+    list-style: none;
+    margin: 0 10px;
+    display: flex;
+}
+.main-nav > li {
+    min-width: 100px;
+    margin: 0 10px;
+    text-align: center;
+    transition: 0.5s;
+}
+nav ul li:hover {
+    color: coral;
+}
+.dropdown {
+    position: relative;
+    /* width: 100px; */
+}
+.content {
+   display: none;
+   padding: 0;
+   position: absolute;
+   top: 15px;
+   padding-top: 15px;
+   flex-direction: column;
+   width: 120%;
+   border-radius: 5px;
+   /* background-color: green; */
+}
+.dropdown:hover .content{
+    display: flex;
+}
+.content > li {
+    padding: 10px 5px ;
+    background-color: green;
+    color: white;
+    transition: 1s;
+}
+.content li a {
+    padding: 10px 20px;
+}
+.content li:hover {
+    background-color: white;
+    color: green;
+}
+.dropdown:hover {
+    display: block;
+}
+header-input {
+    display: flex;
+}
+input {
+    padding: 10px;
+    height: 15px;
+    border: 0;
+    border-radius: 4px;
+}
+input:focus{
+    outline: none;
+}
+.btn {
+    background-color: coral;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    padding: 10px;
+}
+.space-between {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 100%;
+}
+.text-wrap {
+    width: 50%;
+    /* background-color: yellow; */
+    /* height: fit-content; */
+    margin: 30px ;
+    padding: 20px;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+.text-wrap p {
+    margin-bottom: 20px;
+    text-align: justify;
+    color: white;
+}
+button.log {
+    margin: 0 auto;
+    width:15%;
+}
+.forms-wrap {
+    width: 30%;
+    height: 400px;
+    background-color: black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    margin-top: 100px;
+    padding: 20px;
+}
+.forms-wrap input{
+    /* background-color: black; */
+    margin: 30px;
+    /* border-radius: 5px; */
+    border: 0;
+    width: 100%;
+    background-color: black;
+    border-bottom: #fff 2px solid;
+    color: #fff;
+    padding: 10px;
+}
+.white {
+    background-color: #fff;
+    color: coral;
+    width: 80%;
+    margin: 10px auto;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+}
+.btn-utility {
+    width: 80%;
+    margin: 10px auto;
+    background-color: coral;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+}
+.media {
+    z-index: 100;
+    color: #fff;
+    /* background-color: black; */
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    /* margin-top: 200px; */
+
+}
+
+@media (max-width:768px) {
+    .logo {
+        width:100%
+        }
+    .main-nav,
+    .header-input {
+        display: none;
+    }
+    .space-between {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .text-wrap {
+        width: 100%;
+        height: 40%;
+        font-size: 20px;
+        margin: 0;
+    }
+    .forms-wrap {
+        width: 60%;
+        margin: auto;
+    }
+}
